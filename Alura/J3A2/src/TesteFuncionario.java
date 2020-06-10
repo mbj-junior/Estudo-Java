@@ -13,5 +13,8 @@ public class TesteFuncionario {
                             funcionario1.getBonificacao() + " " +
                             funcionario1.getSalario());
 
+
+        System.out.println(funcionario1.getSalario());
     }
+
 }
