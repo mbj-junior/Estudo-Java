@@ -6,9 +6,9 @@ public class SistemaInterno {
 
         boolean autenticou = fa.autentica(senha);
         if (autenticou){
-            System.out.println("Acesso aceito");
+            System.out.println("Acesso Aceito");
         } else {
-            System.out.println("Acesso negado");
+            System.out.println("Acesso Negado");
         }
     }
 
