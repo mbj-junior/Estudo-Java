@@ -2,7 +2,7 @@ public class SistemaInterno {
 
     private int senha = 3333;
 
-    public void autentica (FuncionarioAutenticavel fa){
+    public void autentica (Autenticavel fa){
 
         boolean autenticou = fa.autentica(senha);
         if (autenticou){
