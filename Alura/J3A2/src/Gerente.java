@@ -8,7 +8,7 @@ public class Gerente extends Funcionario implements Autenticavel{
 
 
     public double getBonificacao(){
-        System.out.println("bonificacao do Gerente");
+        System.out.println("bonificaçao do Gerente");
         return super.getSalario();
     }
 
