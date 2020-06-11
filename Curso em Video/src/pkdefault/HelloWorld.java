@@ -1,4 +1,4 @@
-package PkDefault;
+package pkdefault;
 
 public class HelloWorld {
     public static void main(String[] args) {
