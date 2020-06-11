@@ -19,18 +19,9 @@ public class TesteReferencias {
 
         ControleBonificacao controle = new ControleBonificacao();
 
-
-
         controle.registra(gerente1);
         controle.registra(editor1);
         controle.registra(designer1);
         controle.getSoma();
-
-
-
-
-
-
-
     }
 }
