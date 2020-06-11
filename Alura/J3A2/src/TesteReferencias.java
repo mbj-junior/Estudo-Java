@@ -1,20 +1,34 @@
 public class TesteReferencias {
     public static void main(String[] args) {
 
-        Gerente g1 = new Gerente();
-        g1.setName("Marcio");
-        g1.setSalario(5000);
+        Gerente gerente1 = new Gerente();
+        gerente1.setName("Marcia");
+        gerente1.setSalario(100);
 
-        //Funcionario f1 = new Funcionario();
-        //f1.setName("Maria");
-        //f1.setSalario(7000);
+        EditorVideo editor1 = new EditorVideo();
+        editor1.setName("Fabia");
+        editor1.setSalario(200);
+
+        Designer designer1 = new Designer();
+        designer1.setName("Ana");
+        designer1.setSalario(300);
+
+        System.out.println(gerente1.getSalario());
+        System.out.println(editor1.getSalario());
+        System.out.println(designer1.getSalario());
 
         ControleBonificacao controle = new ControleBonificacao();
-        controle.registra(g1);
-        //controle.registra(f1);
 
 
-        System.out.println(controle.getSoma());
+
+        controle.registra(gerente1);
+        controle.registra(editor1);
+        controle.registra(designer1);
+        controle.getSoma();
+
+
+
+
 
 
 

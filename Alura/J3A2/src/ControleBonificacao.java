@@ -8,6 +8,8 @@ public class ControleBonificacao {
     }
 
     public double getSoma(){
+        System.out.println("Acumulado " + soma);
         return soma;
     }
+
 }
