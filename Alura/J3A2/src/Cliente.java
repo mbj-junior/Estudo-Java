@@ -14,7 +14,7 @@ public class Cliente implements Autenticavel{
             return true;
         } else {
             System.out.println("senha invalida");
-            return false
+            return false;
         }
     }
 }
