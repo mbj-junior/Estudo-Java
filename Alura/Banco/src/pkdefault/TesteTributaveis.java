@@ -1,4 +1,4 @@
-package PKDefault;
+package pkdefault;
 
 public class TesteTributaveis {
     public static void main(String[] args) {

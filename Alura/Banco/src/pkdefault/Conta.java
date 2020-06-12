@@ -1,4 +1,4 @@
-package PKDefault;
+package pkdefault;
 
 public abstract class Conta {
 

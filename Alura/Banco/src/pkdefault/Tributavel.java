@@ -1,4 +1,4 @@
-package PKDefault;
+package pkdefault;
 
 public interface Tributavel {
     double getValorImposto();

@@ -1,4 +1,4 @@
-package PKDefault;
+package pkdefault;
 
 public class ContaCorrente extends Conta implements Tributavel{
 
