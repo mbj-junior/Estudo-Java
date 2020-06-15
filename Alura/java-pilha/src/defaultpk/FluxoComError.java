@@ -1,12 +1,12 @@
 package defaultpk;
 
-public class Fluxo {
+public class FluxoComError {
 
     public static void main(String[] args) {
         System.out.println("Ini do main");
         try {
             metodo1();
-        }catch (Exception ex){
+        }catch (ArithmeticException | NullPointerException ex){
            String msg = ex.getMessage();
            System.out.println("Error é "+msg);
            ex.printStackTrace();
@@ -22,9 +22,6 @@ public class Fluxo {
 
     private static void metodo2() {
         System.out.println("Ini do metodo2");
-
-        throw new MinhaExcecao("Deu errado");
-
-        //System.out.println("Fim do metodo2");
+        System.out.println("Fim do metodo2");
     }
 }
