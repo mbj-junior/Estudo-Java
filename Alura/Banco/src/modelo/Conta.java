@@ -1,4 +1,4 @@
-package pkdefault;
+package modelo;
 
 public abstract class Conta {
 

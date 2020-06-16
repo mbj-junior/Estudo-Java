@@ -1,9 +1,13 @@
-package pkdefault;
+package teste;
+
+import modelo.Conta;
+import modelo.ContaCorrente;
+import modelo.SaldoInsuficienteException;
 
 public class TesteSaca {
 
     public static void main(String[] args) {
-        Conta conta = new ContaCorrente(123, 333);
+        modelo.Conta conta = new ContaCorrente(123, 333);
 
         conta.deposita(200);
         System.out.println(conta.getSaldo());

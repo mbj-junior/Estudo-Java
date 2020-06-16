@@ -1,4 +1,4 @@
-package pkdefault;
+package modelo;
 
 public class Conexao implements AutoCloseable{
 
