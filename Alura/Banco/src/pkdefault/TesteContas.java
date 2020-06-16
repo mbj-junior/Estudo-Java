@@ -12,7 +12,11 @@ public class TesteContas {
 
 		System.out.println(cc1.getSaldo() + " " + cp1.getSaldo());
 
-		cc1.transfere(10,cp1);
+		try {
+			cc1.transfere(10,cp1);
+		} catch (SaldoInsuficienteException e) {
+			e.printStackTrace();
+		}
 
 		System.out.println(cc1.getSaldo() + " " + cp1.getSaldo());
 		

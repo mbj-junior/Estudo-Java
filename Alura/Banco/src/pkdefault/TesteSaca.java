@@ -7,9 +7,17 @@ public class TesteSaca {
 
         conta.deposita(200);
         System.out.println(conta.getSaldo());
-        conta.saca(100);
+        try {
+            conta.saca(100);
+        } catch (SaldoInsuficienteException e) {
+            e.printStackTrace();
+        }
         System.out.println(conta.getSaldo());
-        conta.saca(100);
+        try {
+            conta.saca(100);
+        } catch (SaldoInsuficienteException e) {
+            e.printStackTrace();
+        }
         System.out.println(conta.getSaldo());
 
     }
