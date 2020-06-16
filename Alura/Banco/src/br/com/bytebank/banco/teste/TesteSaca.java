@@ -1,13 +1,11 @@
-package teste;
+package br.com.bytebank.banco.teste;
 
-import modelo.Conta;
-import modelo.ContaCorrente;
-import modelo.SaldoInsuficienteException;
+import br.com.bytebank.banco.modelo.*;
 
 public class TesteSaca {
 
     public static void main(String[] args) {
-        modelo.Conta conta = new ContaCorrente(123, 333);
+        Conta conta = new ContaCorrente(123, 333);
 
         conta.deposita(200);
         System.out.println(conta.getSaldo());
