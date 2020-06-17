@@ -17,6 +17,5 @@ public class TesteTributaveis {
 
         System.out.println(calcularImposto.getTotalImposto());
 
-
     }
 }
