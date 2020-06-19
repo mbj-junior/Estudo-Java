@@ -46,10 +46,10 @@ public class Test2 {
         }
 
         //ComparatorNumero comparator = new ComparatorNumero();
-        lista.sort( new ComparatorNome());
+        lista.sort(null);
 
         //Collections.sort(lista, new ComparatorNumero());
-        Collections.sort(lista);
+        //Collections.sort(lista);
 
         System.out.println("---------");
 
