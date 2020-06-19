@@ -2,7 +2,7 @@ package br.com.alura.java.io.teste;
 
 import java.io.*;
 
-public class TesteEscritaPlus {
+public class TesteEscritaFileWriter {
     public static void main(String[] args) throws IOException {
 
         //Fluxo de saida com arquivo
