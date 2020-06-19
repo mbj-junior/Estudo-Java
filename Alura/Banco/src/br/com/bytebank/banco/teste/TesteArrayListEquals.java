@@ -3,7 +3,6 @@ package br.com.bytebank.banco.teste;
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class TesteArrayListEquals {
