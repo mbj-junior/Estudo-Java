@@ -32,8 +32,8 @@ public class TestComparator {
             System.out.println(conta);
         }
 
-        ComparatorNumero comparador = new ComparatorNumero();
-        lista.sort(comparador);
+        //ComparatorNumero comparador = new ComparatorNumero();
+        //lista.sort(comparador);
 
 
         System.out.println("*******************");
