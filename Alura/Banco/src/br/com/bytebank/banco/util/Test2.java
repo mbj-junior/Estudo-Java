@@ -5,9 +5,7 @@ import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Test2 {
 
@@ -37,7 +35,6 @@ public class Test2 {
         cc4.setTitular(clienteCC4);
         cc4.deposita(222.0);
 
-
         List<Conta> lista = new ArrayList<>();
         lista.add(cc1);
         lista.add(cc2);
@@ -45,22 +42,21 @@ public class Test2 {
         lista.add(cc4);
 
         for (Conta conta : lista) {
-            System.out.println(conta.getTitular().getNome());
+            System.out.println(conta.getTitular().getNome()+conta.getSaldo());
         }
 
-        ComparatorNumero comparator = new ComparatorNumero();
-        ComparatorNome comparaTitular = new ComparatorNome();
+        //ComparatorNumero comparator = new ComparatorNumero();
+        lista.sort( new ComparatorNome());
+
+        //Collections.sort(lista, new ComparatorNumero());
+        Collections.sort(lista);
 
         System.out.println("---------");
 
-        lista.sort(comparaTitular);
-
         for (Conta conta : lista) {
-            System.out.println(conta.getTitular().getNome());
+            System.out.println(conta.getTitular().getNome()+conta.getSaldo());
         }
-
     }
-
 }
 
 class ComparatorNome implements Comparator<Conta>{
@@ -73,20 +69,24 @@ class ComparatorNome implements Comparator<Conta>{
         return nomeC1.compareTo(nomeC2);
     }
 }
-
 class ComparatorNumero implements Comparator<Conta> {
 
     @Override
     public int compare(Conta c1, Conta c2) {
 
+        return Integer.compare(c1.getNumero(),c2.getNumero());
+
+        //return c1.getNumero()-c2.getNumero();
+
+       /*
         if(c1.getNumero() < c2.getNumero()) {
             return -1;
         }
-
         if(c1.getNumero() > c2.getNumero()) {
             return 1;
         }
-
         return 0;
+
+        */
     }
 }
