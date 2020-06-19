@@ -6,6 +6,7 @@ import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
 import java.util.*;
+import java.util.function.Consumer;
 
 public class Test2 {
 
@@ -41,39 +42,24 @@ public class Test2 {
         lista.add(cc3);
         lista.add(cc4);
 
-        for (Conta conta : lista) {
-            System.out.println(conta.getTitular().getNome()+conta.getSaldo());
-        }
+        lista.forEach((Conta conta) -> System.out.println(conta.getTitular().getNome()+conta.getSaldo()));
 
         //Functions Object
         //ComparatorNumero comparator = new ComparatorNumero();
 
-        //Classe anonimas
-        lista.sort(new Comparator<Conta>() {
-            @Override
-            public int compare(Conta c1, Conta c2) {
-                return Integer.compare(c1.getNumero(),c2.getNumero());
-            }
-        });
+        //Classes anonimas
+        lista.sort((c1, c2) -> Integer.compare(c1.getNumero(),c2.getNumero()));
 
-        Comparator<Conta> comp = new Comparator<Conta>(){
-
-            @Override
-            public int compare(Conta c1, Conta c2) {
+        Comparator<Conta> comp = (Conta c1, Conta c2) ->{
                 String nomeC1 = c1.getTitular().getNome();
                 String nomeC2 = c2.getTitular().getNome();
-
                 return nomeC1.compareTo(nomeC2);
-            }
         };
+        System.out.println("**********************************");
+        lista.forEach((Conta conta) -> System.out.println(conta.getTitular().getNome()+conta.getSaldo()));
 
         //Collections.sort(lista, new ComparatorNumero());
         //Collections.sort(lista);
 
-        System.out.println("---------");
-
-        for (Conta conta : lista) {
-            System.out.println(conta.getTitular().getNome()+conta.getSaldo());
-        }
     }
 }
