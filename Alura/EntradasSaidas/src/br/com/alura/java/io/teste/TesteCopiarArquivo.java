@@ -5,7 +5,7 @@ import java.net.Socket;
 
 public class TesteCopiarArquivo {
     public static void main(String[] args) throws IOException {
-        Socket s new Socket()
+        Socket s = new Socket();
 
         //Fluxo de entrada e saida com arquivo
         InputStream fis = System.in; //new FileInputStream("entrada.txt");
