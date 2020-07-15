@@ -43,7 +43,7 @@ public class Testandolistas {
 		
 		Collections.sort(aulas);
 		
-		System.out.println(aulas);
+		
 	}
 
 }
