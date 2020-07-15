@@ -36,14 +36,13 @@ public class Testandolistas {
 		aulas.forEach(aula -> {
 			System.out.println("percorrendo: " + aula);
 		});
-		
+
 		aulas.add("Aumentando...");
-		
+
 		System.out.println(aulas);
-		
+
 		Collections.sort(aulas);
-		
-		
+
 	}
 
 }
