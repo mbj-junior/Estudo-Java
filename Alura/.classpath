@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Banco/src"/>
+	<classpathentry kind="src" path="BancoImportado/src"/>
+	<classpathentry kind="src" path="EntradasSaidas/src"/>
+	<classpathentry kind="src" path="gerenciamento-de-cursos/src"/>
+	<classpathentry kind="src" path="J3A2/src"/>
+	<classpathentry kind="src" path="java-pilha/src"/>
+	<classpathentry kind="src" path="merger/src/main/java"/>
+	<classpathentry kind="src" path="oimundo/src"/>
+	<classpathentry kind="lib" path="BancoImportado/libs/Banco.jar"/>
+	<classpathentry kind="output" path="J3A2/out/production/banco-heranca"/>
+</classpath>
