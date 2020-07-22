@@ -22,6 +22,9 @@ public class TestaGasto {
 		System.out.println(gasto2);
 		System.out.println(gasto3);
 		
+		System.out.println("acacc")
+		
 	}
-
+	
+	
 }
